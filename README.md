@@ -6,4 +6,4 @@ The dataset is in the form of a json file and is about 90mb.  In order to run th
 
 The entire notebook, which creates the figures found in the `figs` directory and saves the model in the `models` directory, takes about 4 minutes to run on my desktop -- this is the notebook ``huffington_post_nb.ipynb``.  A more complete description of the dataset together with an exploration of the model parameters is found in that notebook.  
 
-In addition, the notebook ``from_scratch_20_newsgroups.ipynb`` gives an implementation of the multinomial naive Bayes classifier and compares the resulting model with sklearn's implementation on the [20 Newsgroups](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_20newsgroups.html) text classificatoin benchmark dataset.  
+In addition, the notebook ``from_scratch_20_newsgroups.ipynb`` gives an implementation of the multinomial naive Bayes classifier and compares the resulting model with sklearn's implementation on the [20 Newsgroups](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_20newsgroups.html) text classificationn benchmark dataset.  
