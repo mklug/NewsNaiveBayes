@@ -17,21 +17,20 @@ class BNB(object):
     def __init__(self, alpha=1.0,
                  break_chars=set([' ', '\n'] + list(string.punctuation))):
         '''
-        ``vocabulary`` : Trie that includes all of the words
-                         in the training set after training.
-                         The nodes of the trie give indices 
-                         where those words correspond to in 
-                         matrix ``Theta``.
+        ``vocabulary`` : Dictionary that includes all of the words
+                         in the training set after training. The 
+                         nodes of the trie give indices where those 
+                         words correspond to in matrix ``Theta``.
 
         ``Theta`` : Sparse matrix containing the probability
                     parameters computed during training.  This
-                    is constructed initial as a COO sparse matrix
+                    is constructed initially as a COO sparse matrix
                     and then at the end of training converted to
                     a CSR matrix in anticipation of prediction
                     which involves computing matrix-vector products.
 
         ``log_priors`` : An array containing the logs of the priors 
-                         estimated from the trainging data.
+                         estimated from the training data.
 
         ``alpha`` : Smoothing parameter applied at prediction time.  
 
